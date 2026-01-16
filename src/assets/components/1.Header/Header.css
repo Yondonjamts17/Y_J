@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  width: 95vw; /* Ensure header spans the full width of the viewport */
+  width: 100%; /* Ensure header spans the full width of the viewport */
   height: 100px; /* Adjust height dynamically */
   border-bottom: 1px solid #e0e0e0;
 }

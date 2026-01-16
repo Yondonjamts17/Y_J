@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="footer-container">
         {/* Left Section - Company Info */}
         <div className="footer-left">
-          <img src="/assets/logo.png" alt="Y.A Logo" className="footer-logo" />
-          <p className="footer-company-name">Y.A Company</p>
+          <img src="/assets/logo.png" alt="Y_J Logo" className="footer-logo" />
+          <p className="footer-company-name">Y_J Construction Company</p>
         </div>
 
         {/* Center Section - Navigation */}
@@ -40,7 +40,10 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Y.A Company. All Rights Reserved.</p>
+        <p>
+          © {new Date().getFullYear()} Y_J Construction Company. All Rights
+          Reserved.
+        </p>
       </div>
     </footer>
   );

@@ -25,7 +25,7 @@ const CeoMessage = () => {
         <div className="ceo-message_text">
           <h2 className="ceo-message_title">Message from the CEO</h2>
           <p>
-            Welcome to Y.A Construction Company.
+            Welcome to Y_J Construction Company.
             <br />
             Our mission is to bring your vision to life through exceptional
             planning, innovative design, and quality construction.
@@ -33,11 +33,11 @@ const CeoMessage = () => {
             We believe that every project is an opportunity to build lasting
             relationships and create spaces that inspire.
             <br />
-            Thank you for trusting Y.A Construction Company to shape your
+            Thank you for trusting Y_J Construction Company to shape your
             future.
             <br />
             <br />
-            <strong>Y.A Construction Company</strong>
+            <strong>Y_J Construction Company</strong>
           </p>
           <button
             className="ceo-button"
