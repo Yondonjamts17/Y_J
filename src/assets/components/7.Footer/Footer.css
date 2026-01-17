@@ -1,8 +1,9 @@
 .footer {
   background-color: #2e8b57;
   color: white;
-  width: 125%;
+  padding: 10px;
   text-align: center;
+  width: 100%;
 }
 
 .footer-container {
