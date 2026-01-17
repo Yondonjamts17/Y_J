@@ -1,9 +1,10 @@
 .ceo-section {
-  background-color: #f9f9f9;
-  padding: 30px 20px;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  padding: 80px 20px;
   text-align: left;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  width: 120%;
 }
 
 .ceo-container {
@@ -12,101 +13,262 @@
   display: flex;
   align-items: flex-start;
   gap: 50px;
+  width: 120%;
 }
 
 .ceo-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #246b45;
+  color: #fff;
+  width: 120%;
 }
 
 .ceo-message {
-  background-color: #f9f9f9;
-  padding: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 80px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  min-height: 100vh;
+  width: 120%;
 }
 
 .ceo-message_content {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
-  gap: 50px;
+  gap: 70px;
   justify-content: center;
+  align-items: center;
+  width: 120%;
 }
 
 .ceo-message_image {
-  flex: 1;
+  flex: 0 1 350px;
   text-align: center;
+  position: relative;
+  width: 100%;
 }
 
 .ceo-image {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
+  width: 120%;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.ceo-image:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
 }
 
 .ceo-name {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .ceo-signature {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 700;
   font-family: "Brush Script MT", cursive;
+  color: #fff;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .ceo-message_text {
-  flex: 2;
-  text-align: center;
+  flex: 1;
+  text-align: left;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.ceo-message_text:hover {
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
 }
 
 .ceo-message_title {
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: #246b45;
-  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.ceo-message_title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
 }
 
 .ceo-message p {
-  font-size: 1.3rem;
-  color: #333;
-  line-height: 1.8;
+  font-size: 16px;
+  color: #555;
+  line-height: 2;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.ceo-message p strong {
+  color: #667eea;
+  font-weight: 700;
 }
 
 .ceo-button {
   display: inline-block;
-  margin-top: 25px;
-  padding: 12px 25px;
-  background-color: #246b45;
+  margin-top: 35px;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: background 0.3s ease;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
   cursor: pointer;
+  border: none;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.ceo-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 110%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
 }
 
 .ceo-button:hover {
-  background-color: #1f5d39;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
 }
 
-@media (max-width: 900px) {
-  .ceo-container {
-    flex-direction: column;
-    text-align: center;
+.ceo-button:hover::before {
+  left: 100%;
+}
+
+.ceo-button:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1024px) {
+  .ceo-message {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .ceo-message_content {
+    gap: 50px;
+  }
+
+  .ceo-message_text {
+    flex: 1;
+    min-width: 280px;
+    padding: 40px;
+  }
+
+  .ceo-message_title {
+    font-size: 28px;
+  }
+
+  .ceo-message p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ceo-message {
+    padding: 40px 20px;
   }
 
   .ceo-message_content {
     flex-direction: column;
-    text-align: center;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .ceo-message_image {
+    flex: 0 1 280px;
+  }
+
+  .ceo-image {
+    max-width: 280px;
   }
 
   .ceo-message_text {
     text-align: center;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .ceo-message_title {
+    font-size: 26px;
+  }
+
+  .ceo-message_title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .ceo-message p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .ceo-button {
+    padding: 14px 32px;
+    font-size: 15px;
+    width: 110%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ceo-message {
+    padding: 30px 15px;
+  }
+
+  .ceo-message_text {
+    padding: 20px;
+  }
+
+  .ceo-message_title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .ceo-message p {
+    font-size: 13px;
+  }
+
+  .ceo-name {
+    font-size: 16px;
+  }
+
+  .ceo-signature {
+    font-size: 24px;
   }
 }
