@@ -1,0 +1,3 @@
+User-agent
+Allow: /
+Site: https://www.yondonjamts.pro/sitemap.xml

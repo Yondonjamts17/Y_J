@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:sitemap": "node ./src/sitemap.js"
   },
   "devDependencies": {
     "vite": "npm:rolldown-vite@^7.2.5"
@@ -17,6 +18,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.12.0"
+    "react-router-dom": "^7.12.0",
+    "sitemap": "^9.0.0"
   }
 }
